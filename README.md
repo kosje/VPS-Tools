@@ -35,7 +35,9 @@ box
 ## 卸载
 
 ```bash
-sudo rm -f /usr/local/bin/box
+curl -fsSL https://raw.githubusercontent.com/kosje/VPS-Tools/main/uninstall.sh | sudo bash
 ```
+
+卸载器只删除 VPS-Tools 安装的 `/usr/local/bin/box`。本项目没有其他持久化文件、配置或服务；菜单启动的第三方脚本可能安装软件或修改系统，这些内容需使用对应项目的卸载方式清理。
 
 菜单脚本位于本仓库的 `box.sh`，安装器位于 `install.sh`。

@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -u
 
+# Managed by kosje/VPS-Tools
 run_remote_script() {
   local title="$1"
   local url="$2"
