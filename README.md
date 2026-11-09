@@ -25,6 +25,7 @@ box
 3. **NodeQuality 测试**：`https://run.NodeQuality.com`
 4. **TcpQuality 测试**：`ibsgss/TcpQuality`
 5. **AnyTLS-Go 部署**：`kosje/anytls-go`
+6. **彻底卸载 VPS-Tools**：确认后删除 `/usr/local/bin/box` 菜单命令
 
 菜单只在你选择对应项目后才下载并运行其脚本。下载文件使用临时文件，执行后会删除。
 
@@ -34,10 +35,15 @@ box
 
 ## 卸载
 
+安装后也可以运行 `box`，选择 **6) 彻底卸载 VPS-Tools**，并确认操作。
+卸载前需要联网下载卸载器；如果以普通用户运行菜单，会通过 `sudo` 请求管理员权限。
+
+也可以直接运行独立卸载命令：
+
 ```bash
 curl -fsSL https://raw.githubusercontent.com/kosje/VPS-Tools/main/uninstall.sh | sudo bash
 ```
 
-卸载器只删除 VPS-Tools 安装的 `/usr/local/bin/box`。本项目没有其他持久化文件、配置或服务；菜单启动的第三方脚本可能安装软件或修改系统，这些内容需使用对应项目的卸载方式清理。
+卸载器只删除 VPS-Tools 安装的 `/usr/local/bin/box`。本项目没有其他持久化文件、配置或服务；菜单启动的第三方脚本可能安装软件或修改系统，这些内容不会被卸载，需使用对应项目的卸载方式清理。
 
 菜单脚本位于本仓库的 `box.sh`，安装器位于 `install.sh`。
