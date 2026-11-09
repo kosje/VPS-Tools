@@ -35,14 +35,14 @@ show_menu() {
   cat <<'MENU'
 
 ╭──────────────────────────────────────────────╮
-│                 VPS 工具箱                    │
+│                 VPS 工具箱                   │
 ├──────────────────────────────────────────────┤
-│  1) VPS 工具箱（ssh_tool.eooce.com）          │
-│  2) SSH/TCP 调优与加固                        │
-│  3) NodeQuality 测试                           │
-│  4) TcpQuality 测试                            │
-│  5) AnyTLS-Go 一键部署                         │
-│  0) 退出                                       │
+│  1) VPS 工具箱（ssh_tool.eooce.com）         │
+│  2) SSH/TCP 调优与加固                       │
+│  3) NodeQuality 测试                         │
+│  4) TcpQuality 测试                          │
+│  5) AnyTLS-Go 一键部署                       │
+│  0) 退出                                     │
 ╰──────────────────────────────────────────────╯
 MENU
 }
